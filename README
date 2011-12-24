@@ -1,0 +1,13 @@
+There are some very obvious things that need improved on here, which I will work on next time I need this script. The script is designed to create back ups for 7 days, automatically cleaning the older versions as it adds each new day's. Backups are scp'd to a remote server. A restore script is also included.
+
+
+For the moment, feel free to grab it and use it as a starting point. Changes I'll be making:
+
+1) database_backup_restore.sh needs to read db login info from a config, not the included way it is now
+
+2) my messaging system really should have used a function and been a bit more generic
+
+3) database_backup_main should also have its login credentials in a config file to kill the awful last minute hack I added
+
+Feel free to use this anyway it helps, although there are probably better scripts you can grab to do the same stuff.
+
